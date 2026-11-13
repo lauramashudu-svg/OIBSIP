@@ -2,20 +2,7 @@
 
 ## Project Overview
 
-This project uses machine learning to classify Iris flowers into three species: Setosa, Versicolor, and Virginica. The classification is based on four measurements: sepal length, sepal width, petal length, and petal width.
-
-The project was completed as part of the Oasis Infobyte Data Science Internship.
-
-## Project Structure
-
-DataScience-Task1-IrisFlowerClassification/
-│
-├── iris_classification.ipynb
-├── README.md
-└── screenshots/
-    ├── iris_scatter_plot.png
-    ├── iris_box_plots.png
-    └── model_comparison.png
+This is my first Data Science Internship project with Oasis Infobyte. This project uses machine learning to classify Iris flowers into three species, namely Setosa, Versicolor, and Virginica. The classification is based on four measurements: sepal length, sepal width, petal length, and petal width.
 
 
 ## Project Objectives
@@ -57,43 +44,55 @@ The Iris dataset was loaded using `sklearn.datasets.load_iris()` from Scikit-lea
 - Matplotlib
 - Scikit-learn
 
+## Project Structure
+
+DataScience-Task1-IrisFlowerClassification/
+│
+├── iris_classification.ipynb
+├── README.md
+└── screenshots/
+    ├── iris_scatter_plot.png
+    ├── iris_box_plots.png
+    └── model_comparison.png
+
+
 ## Methodology
 
 ### 1. Data Loading and Exploration
 
-Loaded the Iris dataset and converted it into a Pandas DataFrame. Examined its dimensions, data types, missing values, and descriptive statistics.
+This process loaded the Iris dataset and converted it into a Pandas DataFrame. It also examined its dimensions, data types, missing values, and descriptive statistics.
 
 ### 2. Data Visualisation
 
-Created a scatter plot comparing petal length and petal width, along with four box plots to compare feature distributions across the species.
+This process created a scatter plot comparing petal length and petal width, along with four box plots to compare feature distributions across the species.
 
 The visualisations showed that Setosa was clearly separated by its petal measurements, while Versicolor and Virginica showed some overlap.
 
 ### 3. Data Preparation
 
-Separated the four flower measurements into features (`X`) and the species labels into the target (`y`).
+This process separated the four flower measurements into features `X` and the species labels into the target `y`.
 
-Split the data into 80% training data and 20% testing data, using stratification to preserve the class proportions.
+It also split the data into 80% training data and 20% testing data, using stratification to preserve the class proportions.
 
 ### 4. Model Training and Evaluation
 
-Trained and evaluated two classification algorithms:
+This process trained and evaluated two classification algorithms:
 
 - Logistic Regression
 - K-Nearest Neighbors (KNN), using five neighbours
 
-Evaluated the models using accuracy, confusion matrices, precision, recall, and F1-scores.
+Also evaluated the models using accuracy, confusion matrices, precision, recall, and F1-scores.
 
 ## Results
 
-| Model | Test Accuracy |
-|---|---:|
-| Logistic Regression | 96.67% |
-| K-Nearest Neighbors | 100.00% |
+| Model               | Test Accuracy |
+|---                  |---            |
+| Logistic Regression | 96.67%        |
+| K-Nearest Neighbors | 100.00%       |
 
 KNN achieved the highest test accuracy, correctly classifying all 30 test samples. Logistic Regression correctly classified 29 out of 30 samples.
 
-KNN was selected as the best-performing model for this experiment based on test accuracy. The results are based on a single train-test split and do not guarantee the same performance on all unseen data.
+KNN was selected as the best-performing model for this experiment based on the test accuracy. These results are based on a single train-test split and do not guarantee the same performance on all unseen data.
 
 ## Conclusion
 
