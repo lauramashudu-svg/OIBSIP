@@ -96,12 +96,13 @@ DataScience-Task3-CarPricePrediction/
 │       └── car data.csv
 │
 ├── screenshots/
-│   ├── 01_dataset_overview.png
-│   ├── 02_data_cleaning.png
-│   ├── 03_exploratory_data_analysis.png
-│   ├── 04_visual_analysis.png
-│   ├── 05_model_evaluation.png
-│   └── 06_model_comparison.png
+│   ├── data_cleaning.png
+│   ├── dataset_overview.png
+│   ├── exploratory_data_analysis.png
+│   ├── model_evaluation.png
+│   ├── model_heatmap.png
+│   └── output.png
+│   └── visual_analysis.png
 │
 ├── car_price_prediction.ipynb
 └── README.md
